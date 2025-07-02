@@ -4,109 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Droll Theme Park</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-    }
-    header {
-      background-color: #20232a;
-      padding: 20px;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-    }
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-      background-color: #e0e0e0;
-    }
-    .hero h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-    .btn {
-      padding: 10px 20px;
-      margin: 5px;
-      background-color: #20232a;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .section h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .card {
-      background-color: white;
-      padding: 30px;
-      width: 280px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-  </style>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- ===== HEADER ===== -->
   <header>
-    <div><strong>Droll Theme Park</strong></div>
+    <h1>Droll Theme Park</h1>
     <nav>
       <a href="#">Home</a>
       <a href="#">Rides</a>
       <a href="#">Trips</a>
-      <a href="#">Insider Program</a>
+      <a href="#">Insider</a>
     </nav>
   </header>
 
+  <!-- ===== HERO SECTION ===== -->
   <section class="hero">
-    <h1>Explore the Galaxy with Droll Theme Park</h1>
+    <h1>Explore the Galaxy</h1>
     <p>Book interplanetary rides, join space trips, and become a DTP Insider</p>
     <button class="btn">Book a Ride</button>
     <button class="btn">Join a Trip</button>
     <button class="btn">Become an Insider</button>
   </section>
 
+  <!-- ===== FEATURES SECTION ===== -->
   <section class="section">
-    <h2>Our Top Features</h2>
+    <h2>Top Features</h2>
     <div class="card-container">
       <div class="card">
-        <h3>Custom Ride Booking</h3>
-        <p>Choose your favorite planet and ride type. Full control over your experience.</p>
+        <h3>Ride Booking</h3>
+        <p>Select any planet and choose your own adventure. Rides tailored to your cosmic curiosity.</p>
       </div>
       <div class="card">
-        <h3>Join Regular Trips</h3>
-        <p>Schedule and manage your interplanetary trips easily as a member.</p>
+        <h3>Join Space Trips</h3>
+        <p>Enroll for scheduled galactic trips with real‑time updates and alerts.</p>
       </div>
       <div class="card">
-        <h3>DTP Insider Alerts</h3>
-        <p>Get early access when we launch on new celestial bodies!</p>
+        <h3>Insider Program</h3>
+        <p>Get early access when we open new portals on celestial bodies. First to test new experiences!</p>
       </div>
     </div>
   </section>
 
-  <footer style="background-color:#20232a; color:white; text-align:center; padding:20px;">
-    © 2025 Droll Theme Park | All rights reserved
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    &copy; 2025 Droll Theme Park. All Rights Reserved.
   </footer>
 
 </body>
