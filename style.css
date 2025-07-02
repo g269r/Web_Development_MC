@@ -1,0 +1,145 @@
+/* ===============  GLOBAL RESET  =============== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===============  HEADER  =============== */
+header {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffff;
+}
+
+/* ===============  HERO SECTION  =============== */
+.hero {
+  background: url("https://images.unsplash.com/photo-1508264165352-258db2ebd59a")
+    no-repeat center center / cover;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 6px #000;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 24px;
+  margin: 10px;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0097a7;
+}
+
+/* ===============  FEATURES SECTION  =============== */
+.section {
+  padding: 60px 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #243b55;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 30px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #141e30;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #444;
+}
+
+/* ===============  FOOTER  =============== */
+footer {
+  background-color: #141e30;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+/* ===============  RESPONSIVE  =============== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
